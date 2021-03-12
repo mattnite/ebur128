@@ -1,0 +1,9 @@
+pkgs:
+  ebur128:
+    version: 0.0.0
+
+  Ebur128Builder:
+    version: 0.0.0
+    root: src/builder.zig
+    deps:
+      build-tools/download: ^1.0.1

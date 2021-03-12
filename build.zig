@@ -6,14 +6,6 @@ pub fn build(b: *Builder) void {
     lib.setBuildMode(mode);
     lib.install();
 
-    const exe = b.addExecutable("minimal", "src/minimal-example.zig");
-    exe.setBuildMode(mode);
-    exe.addPackagePath("ebur128", "src/main.zig");
-    exe.linkSystemLibrary("ebur128");
-    exe.linkSystemLibrary("sndfile");
-    exe.linkLibC();
-    exe.install();
-
     var main_tests = b.addTest("src/main.zig");
     main_tests.setBuildMode(mode);
 
