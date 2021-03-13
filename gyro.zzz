@@ -1,6 +1,7 @@
 pkgs:
   ebur128:
     version: 0.0.0
+    root: src/main.zig
 
   Ebur128Builder:
     version: 0.0.0
